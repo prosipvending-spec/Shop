@@ -1,0 +1,3 @@
+name = "prosip-backend"
+compatibility_date = "2026-01-05"
+main = "index.js"

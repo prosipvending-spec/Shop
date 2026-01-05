@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tienda Gadgets | Oferta 2026</title>
+  <title>Tienda Gadgets | Prosip 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon-32x32.png">
 
   <style>
     :root {
@@ -13,173 +13,65 @@
       --verde:#1fa85b;
       --gris:#f4f6f5;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: var(--gris);
-      color: #333;
-    }
-
-    header {
-      background: var(--negro);
-      padding: 15px;
-      text-align: center;
-      color: white;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .productos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .producto {
-      background: white;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      text-align: left;
-    }
-
-    .precio {
-      font-size: 26px;
-      color: var(--verde);
-      font-weight: bold;
-      margin: 15px 0;
-    }
-
-    .cta {
-      background: var(--verde);
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 18px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    .cta:hover {
-      opacity: 0.9;
-    }
-
-    #checkout {
-      display: none;
-      background: white;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      max-width: 500px;
-      margin: auto;
-    }
-
-    #checkout input {
-      width: 100%;
-      padding: 14px;
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    footer {
-      background: var(--negro);
-      color: white;
-      text-align: center;
-      padding: 30px;
-    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: Arial; background: var(--gris); color:#333; }
+    header { background: var(--negro); padding:15px; text-align:center; color:white; }
+    header img { height:40px; }
+    section { max-width:1000px; margin:auto; padding:60px 20px; text-align:center; }
+    h1 { font-size:36px; margin-bottom:40px; }
+    h2 { margin-bottom:10px; }
+    p { font-size:18px; line-height:1.6; margin-bottom:15px; }
+    .productos { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+    .producto { background:white; padding:30px; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,0.08); text-align:left; }
+    .precio { font-size:26px; color:var(--verde); font-weight:bold; margin:15px 0; }
+    .cta { background:var(--verde); color:white; padding:15px; border-radius:10px; font-size:18px; border:none; cursor:pointer; width:100%; }
+    .cta:hover { opacity:0.9; }
+    #checkout { display:none; background:white; padding:30px; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,0.1); max-width:500px; margin:auto; }
+    #checkout input { width:100%; padding:14px; margin:10px 0; font-size:16px; }
+    footer { background:var(--negro); color:white; text-align:center; padding:30px; }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h2>Prosip Vending</h2>
+  <img src="logo.png" alt="Logo Prosip">
 </header>
 
 <section>
   <h1>🔥 Gadgets que están arrasando en 2026</h1>
-
   <div class="productos">
-
-    <!-- PRODUCTO 1 -->
+    <!-- Mezclador de cartas -->
     <div class="producto">
       <h2>🃏 Mezclador Automático de Cartas</h2>
-      <p>Mezcla hasta 6 barajas de forma rápida, silenciosa y justa. Ideal para Poker, UNO y Blackjack.</p>
+      <p>Mezcla hasta 6 barajas rápida y silenciosamente. Ideal para Poker, UNO, Blackjack.</p>
       <div class="precio">89,99 €</div>
-      <button class="cta" onclick="abrirCheckout('mezclador-cartas')">
-        Comprar ahora
-      </button>
+      <button class="cta" onclick="abrirCheckout('mezclador-cartas')">Comprar ahora</button>
     </div>
-
-    <!-- PRODUCTO 2 -->
+    <!-- Cámara corporal -->
     <div class="producto">
-      <h2>📷 Cámara Corporal Portátil Manos Libres</h2>
-      <p>
-        Cámara corporal ultracompacta del tamaño de un pulgar.
-        Ideal para grabaciones POV, seguridad o deporte.
-        Calidad prémium y uso manos libres.
-      </p>
+      <h2>📷 Cámara Corporal Portátil</h2>
+      <p>Ultracompacta, tamaño pulgar, manos libres. Calidad prémium.</p>
       <div class="precio">29,99 €</div>
-      <button class="cta" onclick="abrirCheckout('camara-corporal')">
-        Comprar ahora
-      </button>
+      <button class="cta" onclick="abrirCheckout('camara-corporal')">Comprar ahora</button>
     </div>
-
-    <!-- PRODUCTO 3 -->
+    <!-- Difusor aroma -->
     <div class="producto">
       <h2>🔥 Difusor de Aroma Efecto Llama</h2>
-      <p>
-        Humidificador con efecto llama y luz LED tipo medusa.
-        Diseño grano de madera, multi-puerto y compatible con aceites esenciales.
-      </p>
+      <p>Humidificador LED tipo medusa, diseño grano de madera, multi-puerto.</p>
       <div class="precio">29,99 €</div>
-      <button class="cta" onclick="abrirCheckout('difusor-llama')">
-        Comprar ahora
-      </button>
+      <button class="cta" onclick="abrirCheckout('difusor-llama')">Comprar ahora</button>
     </div>
-
   </div>
 </section>
 
 <section id="checkout">
   <h2>Finalizar pedido</h2>
-
   <p id="productoSeleccionadoTexto"></p>
-
   <input id="nombre" placeholder="Nombre completo" required>
   <input id="email" type="email" placeholder="Correo electrónico" required>
   <input id="direccion" placeholder="Dirección de envío" required>
-
-  <button class="cta" onclick="enviarPedido()">
-    Confirmar pedido
-  </button>
+  <button class="cta" onclick="enviarPedido()">Confirmar pedido</button>
 </section>
 
 <footer>
@@ -187,45 +79,22 @@
 </footer>
 
 <script>
-/* ===============================
-   PRODUCTOS
-================================ */
 const PRODUCTOS = {
-  "mezclador-cartas": {
-    id: "mezclador-cartas",
-    nombre: "Mezclador Automático de Cartas",
-    precio: 89.99
-  },
-  "camara-corporal": {
-    id: "camara-corporal",
-    nombre: "Cámara Corporal Portátil Manos Libres",
-    precio: 29.99
-  },
-  "difusor-llama": {
-    id: "difusor-llama",
-    nombre: "Difusor de Aroma Efecto Llama",
-    precio: 29.99
-  }
+  "mezclador-cartas": { id:"mezclador-cartas", nombre:"Mezclador Automático de Cartas", precio:89.99 },
+  "camara-corporal": { id:"camara-corporal", nombre:"Cámara Corporal Portátil", precio:29.99 },
+  "difusor-llama": { id:"difusor-llama", nombre:"Difusor de Aroma Efecto Llama", precio:29.99 }
 };
 
 let productoSeleccionado = null;
 
-/* ===============================
-   UI
-================================ */
 function abrirCheckout(productoId) {
   productoSeleccionado = PRODUCTOS[productoId];
-
   document.getElementById("productoSeleccionadoTexto").innerText =
     `Producto: ${productoSeleccionado.nombre} — ${productoSeleccionado.precio} €`;
-
   document.getElementById("checkout").style.display = "block";
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
 
-/* ===============================
-   ENVÍO DE PEDIDO
-================================ */
 async function enviarPedido() {
   const pedido = {
     producto: productoSeleccionado,
@@ -235,31 +104,15 @@ async function enviarPedido() {
       direccion: document.getElementById("direccion").value
     }
   };
+  
+  const res = await fetch("https://prosip-backend.prosipvending.workers.dev/pedido", {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify(pedido)
+  });
 
-  try {
-    const res = await fetch(
-      "https://prosip-backend.prosipvending.workers.dev",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(pedido)
-      }
-    );
-
-    if (res.ok) {
-      alert("Pedido recibido correctamente. Te contactaremos pronto.");
-      // limpiar formulario y ocultar checkout
-      document.getElementById("nombre").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("direccion").value = "";
-      document.getElementById("checkout").style.display = "none";
-    } else {
-      alert("Error al procesar el pedido");
-    }
-  } catch (err) {
-    console.error(err);
-    alert("Error de conexión con el servidor.");
-  }
+  if (res.ok) alert("Pedido recibido correctamente. Te contactaremos pronto.");
+  else alert("Error al procesar el pedido");
 }
 </script>
 
