@@ -5,3 +5,15 @@ type = "javascript"
 
 account_id = "913de4dc1ae6f0565210b4e34557f84e"
 workers_dev = true
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = true
+persist = true
+head_sampling_rate = 1
