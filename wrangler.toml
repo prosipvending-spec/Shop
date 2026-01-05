@@ -1,0 +1,7 @@
+name = "prosip-backend"
+main = "index.js"
+compatibility_date = "2026-01-05"
+type = "javascript"
+
+account_id = "913de4dc1ae6f0565210b4e34557f84e"
+workers_dev = true
