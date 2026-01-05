@@ -1,0 +1,4 @@
+name = "prosip-backend"          # Nombre de tu Worker
+main = "index.js"                # Archivo principal del Worker
+compatibility_date = "2026-01-05"
+type = "javascript"
