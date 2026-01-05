@@ -236,19 +236,29 @@ async function enviarPedido() {
     }
   };
 
-  const res = await fetch(
-    "https://prosip-backend.prosipvending.workers.dev/pedido",
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(pedido)
-    }
-  );
+  try {
+    const res = await fetch(
+      "https://prosip-backend.prosipvending.workers.dev",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(pedido)
+      }
+    );
 
-  if (res.ok) {
-    alert("Pedido recibido correctamente. Te contactaremos pronto.");
-  } else {
-    alert("Error al procesar el pedido");
+    if (res.ok) {
+      alert("Pedido recibido correctamente. Te contactaremos pronto.");
+      // limpiar formulario y ocultar checkout
+      document.getElementById("nombre").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("direccion").value = "";
+      document.getElementById("checkout").style.display = "none";
+    } else {
+      alert("Error al procesar el pedido");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Error de conexión con el servidor.");
   }
 }
 </script>
